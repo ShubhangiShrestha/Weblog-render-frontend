@@ -21,7 +21,7 @@ const PrivateRoute = ({ isAuthenticated, ...props }) => {
     <>
       <Header />
       <Outlet />
-    </> : <Navigate replace to='/account' />
+    </> : <Navigate replace to='/' />
 };
 
 function App() {
@@ -33,10 +33,10 @@ function App() {
       <BrowserRouter>
         <Box style={{ marginTop: 20 }}>
           <Routes>
-            <Route path='/account' element={<Login isUserAuthenticated={isUserAuthenticated} />} />
+            <Route path='/' element={<Login isUserAuthenticated={isUserAuthenticated} />} />
             
-            <Route path='/' element={<PrivateRoute isAuthenticated={isAuthenticated} />} >
-              <Route path='/' element={<Home />} />
+            <Route path='/home' element={<PrivateRoute isAuthenticated={isAuthenticated} />} >
+              <Route path='/home' element={<Home />} />
             </Route>
 
             <Route path='/create' element={<PrivateRoute isAuthenticated={isAuthenticated} />} >
