@@ -61,7 +61,7 @@ const About = () => {
                             </Typography>
                             <Box style={{textAlign:'center',paddingTop:'80px'}}>
                                 <Button style={{backgroundColor:'white',fontSize:'16px',color:'black',fontFamily:'decorative',padding:'10px',boxShadow:'0 6px 12px 0 white'}}>
-                                    <Link style={{textDecoration:'none',color:'black'}} to='/'>Get  Started</Link>
+                                    <Link style={{textDecoration:'none',color:'black'}} to='/home'>Get  Started</Link>
                                 </Button>
                             </Box>
                         </Grid>
