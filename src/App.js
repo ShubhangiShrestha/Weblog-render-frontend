@@ -31,7 +31,7 @@ function App() {
     <GoogleOAuthProvider clientId="1013360049760-2aulnj43rj9giuruc9bfkhu7givv9qod.apps.googleusercontent.com">
     <DataProvider>
       <BrowserRouter>
-        <Box style={{ marginTop: 20 }}>
+        <Box style={{ marginTop: 5 }}>
           <Routes>
             <Route path='/' element={<Login isUserAuthenticated={isUserAuthenticated} />} />
             
@@ -63,9 +63,4 @@ function App() {
 }
 export default App;
 
-/*<Route path='/'>
-              <Route path='/' element={<Home />} />
-            </Route>*/
-// '/account'
 
-//<Header />
