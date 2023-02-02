@@ -24,8 +24,8 @@ const Header = () => {
             <Container>
                 <p style={{float:'left',paddingRight:'65%',fontSize:'25px',paddingBottom:'20px',color:'white'}}>Weblog</p>
                 <Link to='/about'>ABOUT</Link>
-                <Link to='/'>HOME</Link>
-                <Link to='/account'>LOGOUT</Link>
+                <Link to='/home'>HOME</Link>
+                <Link to='/'>LOGOUT</Link>
             </Container>
         </Component>
     )
